@@ -13,6 +13,6 @@ public class AzureApplication implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) throws Exception {
-
+		System.out.println("Azure application starts ! ");
 	}
 }
