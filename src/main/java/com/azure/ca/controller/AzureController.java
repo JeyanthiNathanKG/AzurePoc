@@ -2,6 +2,7 @@ package com.azure.ca.controller;
 
 
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
@@ -13,9 +14,8 @@ public class AzureController {
         return "Hello Azure !";
     }
 
-    @GetMapping("/hello")
-    public String helloWorld(){
-        System.out.println("*************************************** \n Welcome !");
-        return "Welcome to Spring Azure App ";
+    @GetMapping("/greetings/{name}")
+    public String greetings(@PathVariable String name){
+        return "Hey " + name + " ! \ngreetings From Azure App Service";
     }
 }
