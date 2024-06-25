@@ -16,6 +16,7 @@ public class AzureController {
 
     @GetMapping("/greetings/{name}")
     public String greetings(@PathVariable String name){
+        System.out.println("*************************************** \n Greetings !");
         return "Hey " + name + " ! \ngreetings From Azure App Service";
     }
 }
