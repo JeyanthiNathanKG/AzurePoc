@@ -11,4 +11,10 @@ public class AzureController {
     public String welcomeMessage(){
         return "Hello Azure !";
     }
+
+    @GetMapping("/hello")
+    public String helloWorld(){
+        System.out.println("*************************************** \n Welcome !");
+        return "Welcome to Spring Azure App ";
+    }
 }
