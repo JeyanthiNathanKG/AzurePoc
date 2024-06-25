@@ -9,6 +9,7 @@ public class AzureController {
 
     @GetMapping("/")
     public String welcomeMessage(){
+        System.out.println("*************************************** \n Home !");
         return "Hello Azure !";
     }
 
